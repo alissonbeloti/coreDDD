@@ -61,7 +61,7 @@ namespace Api.Integration.Test
         {
             return await client.PostAsync(url, 
                 //new StringContent(JsonConvert.SerializeObject(dataclass), System.Text.Encoding.UTF8, "application/json")
-                new StringContent(JsonConvert.SerializeObject(dataclass), System.Text.Encoding.UTF8)
+                new StringContent(JsonConvert.SerializeObject(dataclass), System.Text.Encoding.UTF8, "application/json")
                 );
         }
         public void Dispose()
